@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Детали тура - Туристическое агентство "GeoTravel"</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/tour-details.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <section class="tour-header">
+        <div class="container">
+            <div class="tour-gallery">
+                <div class="main-image">
+                    <img src="https://i.pinimg.com/originals/78/ca/35/78ca357fc5263ad3392717c74a30e9ac.jpg" alt="Тур" id="mainImage">
+                </div>
+                <div class="gallery-thumbs">
+                    <img src="https://avatars.mds.yandex.net/i?id=a3eb08b7f812ce3174ef4d1917bc591fb9115d5b-10815668-images-thumbs&n=13" alt="Фото 1" class="thumb active" onclick="changeImage(this)">
+                    <img src="https://avatars.mds.yandex.net/i?id=4ee49186ddcd4366ee7a5e62b29742e5_l-5910728-images-thumbs&n=13" alt="Фото 2" class="thumb" onclick="changeImage(this)">
+                    <img src="https://elements-resized.envatousercontent.com/elements-video-cover-images/2a131a4f-7f42-421a-86c8-fa1725170203/video_preview/video_preview_0000.jpg?w=500&cf_fit=cover&q=85&format=auto&s=c00a56b973b2ed38bd96f6e7b0c2c42e7a20156b50e4c9bf38ad3ae582e64491" alt="Фото 3" class="thumb" onclick="changeImage(this)">
+                </div>
+            </div>
+            <div class="tour-info">
+                <div class="tour-badge">Пляжный отдых</div>
+                <h1>Анталия, Турция - 7 ночей</h1>
+                <div class="tour-rating">
+                    <div class="stars">★★★★★</div>
+                    <span class="rating-text">4.8 (127 отзывов)</span>
+                </div>
+                <div class="tour-description">
+                    <p>Роскошный отдых в 5-звездочном отеле Delphin Imperial в Анталии. Все включено, собственный пляж, множество развлечений для всей семьи.</p>
+                </div>
+                <div class="tour-details">
+                    <div class="detail-item">
+                        <i class="icon-calendar"></i>
+                        <span>7 ночей / 8 дней</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="icon-plane"></i>
+                        <span>Прямой рейс</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="icon-star"></i>
+                        <span>5 звезд</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="icon-meal"></i>
+                        <span>Все включено</span>
+                    </div>
+                </div>
+                <div class="tour-price">
+                    <div class="price-main">от 35 000 ₽</div>
+                    <div class="price-note">за человека при двухместном размещении</div>
+                </div>
+                <div class="tour-actions">
+                    <button class="btn btn-primary">Забронировать</button>
+                    <button class="btn btn-outline">Добавить в избранное</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tour-description section">
+        <div class="container">
+            <div class="description-tabs">
+                <button class="tab-btn active" onclick="showTab('description')">Описание</button>
+                <button class="tab-btn" onclick="showTab('program')">Программа</button>
+                <button class="tab-btn" onclick="showTab('hotel')">Отель</button>
+                <button class="tab-btn" onclick="showTab('reviews')">Отзывы</button>
+            </div>
+            
+            <div class="tab-content">
+                <div id="description" class="tab-pane active">
+                    <h2>Описание тура</h2>
+                    <p>
+                        Анталия - жемчужина турецкого побережья, где древняя история встречается с современным комфортом. 
+                        Этот курорт славится своими золотыми пляжами, кристально чистой водой Средиземного моря и 
+                        богатым культурным наследием.
+                    </p>
+                    <p>
+                        Отель Delphin Imperial расположен в самом сердце курортной зоны Анталии, всего в 15 минутах 
+                        от центра города. Современная архитектура отеля гармонично сочетается с окружающей природой, 
+                        создавая атмосферу настоящего рая.
+                    </p>
+                    <h3>Что включено в тур:</h3>
+                    <ul>
+                        <li>Перелет Москва - Анталия - Москва</li>
+                        <li>Проживание в отеле 5★</li>
+                        <li>Питание "Все включено"</li>
+                        <li>Трансфер аэропорт - отель - аэропорт</li>
+                        <li>Медицинская страховка</li>
+                        <li>Услуги русскоязычного гида</li>
+                    </ul>
+                </div>
+
+                <div id="program" class="tab-pane">
+                    <h2>Программа тура</h2>
+                    <div class="program-day">
+                        <h3>День 1. Прибытие</h3>
+                        <p>Прибытие в аэропорт Анталии. Встреча с гидом, трансфер в отель. Размещение, отдых.</p>
+                    </div>
+                    <div class="program-day">
+                        <h3>День 2-6. Отдых</h3>
+                        <p>Свободное время для отдыха на пляже, посещения бассейнов, участия в развлекательных программах отеля.</p>
+                    </div>
+                    <div class="program-day">
+                        <h3>День 7. Экскурсия</h3>
+                        <p>Обзорная экскурсия по Анталии с посещением исторических достопримечательностей.</p>
+                    </div>
+                    <div class="program-day">
+                        <h3>День 8. Отъезд</h3>
+                        <p>Освобождение номера, трансфер в аэропорт, вылет в Москву.</p>
+                    </div>
+                </div>
+
+                <div id="hotel" class="tab-pane">
+                    <h2>Отель Delphin Imperial 5★</h2>
+                    <div class="hotel-info">
+                        <div class="hotel-image">
+                            <img src="https://avatars.mds.yandex.net/i?id=1ffa981a7cf565d20bdbd006cbb4d963_l-10637411-images-thumbs&n=13" alt="Отель">
+                        </div>
+                        <div class="hotel-description">
+                            <p>
+                                Delphin Imperial - это роскошный 5-звездочный отель, расположенный на первой линии 
+                                пляжа в Анталии. Отель предлагает все необходимое для незабываемого отдыха.
+                            </p>
+                            <h3>Удобства отеля:</h3>
+                            <ul>
+                                <li>Собственный песчаный пляж</li>
+                                <li>5 бассейнов (включая детский)</li>
+                                <li>Спа-центр с турецкой баней</li>
+                                <li>Фитнес-центр</li>
+                                <li>Детский клуб</li>
+                                <li>Анимационная программа</li>
+                                <li>Wi-Fi на всей территории</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="reviews" class="tab-pane">
+                    <h2>Отзывы клиентов</h2>
+                    <div class="reviews-list">
+                        <div class="review-item">
+                            <div class="review-header">
+                                <div class="review-author">
+                                    <div class="author-info">
+                                        <h4>Анна Петрова</h4>
+                                        <div class="review-stars">★★★★★</div>
+                                    </div>
+                                </div>
+                                <div class="review-date">15.03.2024</div>
+                            </div>
+                            <p>Отличный отель! Все было на высшем уровне. Персонал очень внимательный, еда разнообразная и вкусная. Обязательно вернемся!</p>
+                        </div>
+                        <div class="review-item">
+                            <div class="review-header">
+                                <div class="review-author">
+                                    <div class="author-info">
+                                        <h4>Михаил Иванов</h4>
+                                        <div class="review-stars">★★★★★</div>
+                                    </div>
+                                </div>
+                                <div class="review-date">10.03.2024</div>
+                            </div>
+                            <p>Прекрасный отдых! Пляж чистый, море теплое. Детям очень понравилось в детском клубе. Рекомендую!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="similar-tours section">
+        <div class="container">
+            <h2 class="section-title">Похожие туры</h2>
+            <div class="tours-grid grid grid-3">
+                <div class="tour-card card">
+                    <img src="https://tourday.by/wp-content/uploads/2024/04/image001.jpg" alt="Тур" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">Хургада, Египет</h3>
+                                <p class="card-text">7 ночей, все включено, 4★ отель</p>
+                        <div class="card-price">от 30 000 ₽</div>
+                        <a href="tour-details.html" class="btn">Подробнее</a>
+                    </div>
+                </div>
+                <div class="tour-card card">
+                    <img src="https://i.pinimg.com/originals/44/fb/e8/44fbe8ff58767eb613d529420a555e0d.jpg" alt="Тур" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">Пхукет, Тайланд</h3>
+                        <p class="card-text">10 ночей, завтраки, 5★ отель</p>
+                        <div class="card-price">от 55 000 ₽</div>
+                        <a href="tour-details.html" class="btn">Подробнее</a>
+                    </div>
+                </div>
+                <div class="tour-card card">
+                    <img src="https://i.pinimg.com/originals/be/58/b4/be58b45467e405834a6582f6f245f750.jpg" alt="Тур" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">Дубай, ОАЭ</h3>
+                        <p class="card-text">8 ночей, завтраки, 5★ отель</p>
+                        <div class="card-price">от 45 000 ₽</div>
+                        <a href="tour-details.html" class="btn">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer"></div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/tour-details.js"></script>
+</body>
+</html>

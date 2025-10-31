@@ -1,0 +1,338 @@
+/* Стили для страницы подтверждения бронирования */
+
+/* Заголовок подтверждения */
+.confirmation-header {
+    background: linear-gradient(135deg, #27ae60, #2ecc71);
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.success-icon {
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 30px;
+}
+
+.success-icon i {
+    width: 50px;
+    height: 50px;
+    fill: white;
+}
+
+.confirmation-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.confirmation-header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Информация о бронировании */
+.booking-info {
+    background: white;
+    padding: 60px 0;
+}
+
+.info-grid {
+    gap: 40px;
+}
+
+.info-card {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.info-card h2 {
+    color: #2c3e50;
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+}
+
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.detail-item:last-child {
+    border-bottom: none;
+}
+
+.detail-item .label {
+    font-weight: 600;
+    color: #666;
+}
+
+.detail-item .value {
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+/* Стоимость */
+.pricing {
+    background: #f8f9fa;
+    padding: 60px 0;
+}
+
+.pricing-card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.pricing-card h2 {
+    color: #2c3e50;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.price-breakdown {
+    margin-bottom: 30px;
+}
+
+.price-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.price-item:last-child {
+    border-bottom: none;
+}
+
+.price-item.total {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #2c3e50;
+    border-top: 2px solid #ff6b35;
+    padding-top: 20px;
+    margin-top: 15px;
+}
+
+.payment-info {
+    background: #e8f4fd;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #3498db;
+}
+
+.payment-info p {
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.payment-info p:last-child {
+    margin-bottom: 0;
+}
+
+/* Следующие шаги */
+.next-steps {
+    background: white;
+    padding: 60px 0;
+}
+
+.steps-grid {
+    margin-top: 50px;
+}
+
+.step-item {
+    text-align: center;
+    padding: 30px 20px;
+    background: #f8f9fa;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.step-item:hover {
+    transform: translateY(-5px);
+}
+
+.step-number {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #ff6b35, #f7931e);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 auto 20px;
+}
+
+.step-content h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.step-content p {
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Важная информация */
+.important-info {
+    background: #f8f9fa;
+    padding: 60px 0;
+}
+
+.info-cards {
+    gap: 30px;
+}
+
+.info-card.warning {
+    background: #fff3cd;
+    border-left: 4px solid #ffc107;
+}
+
+.info-card.info {
+    background: #d1ecf1;
+    border-left: 4px solid #17a2b8;
+}
+
+.info-card h3 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+.info-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info-card li {
+    padding: 8px 0;
+    color: #2c3e50;
+    position: relative;
+    padding-left: 20px;
+}
+
+.info-card li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #ff6b35;
+    font-weight: bold;
+}
+
+.info-card a {
+    color: #ff6b35;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.info-card a:hover {
+    text-decoration: underline;
+}
+
+/* Действия */
+.actions {
+    background: white;
+    padding: 60px 0;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .confirmation-header h1 {
+        font-size: 2rem;
+    }
+    
+    .confirmation-header p {
+        font-size: 1.1rem;
+    }
+    
+    .info-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .info-card {
+        padding: 25px 20px;
+    }
+    
+    .pricing-card {
+        padding: 30px 20px;
+    }
+    
+    .steps-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .info-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .action-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .confirmation-header {
+        padding: 60px 0;
+    }
+    
+    .success-icon {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .success-icon i {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .confirmation-header h1 {
+        font-size: 1.75rem;
+    }
+    
+    .detail-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    
+    .step-item {
+        padding: 25px 15px;
+    }
+    
+    .info-card {
+        padding: 20px 15px;
+    }
+}
+
+
+
+

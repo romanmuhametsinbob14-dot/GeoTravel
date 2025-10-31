@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости - Туристическое агентство "GeoTravel"</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/news.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Новости и акции</h1>
+            <p>Следите за последними новостями и выгодными предложениями</p>
+        </div>
+    </section>
+
+    <section class="news-filters section">
+        <div class="container">
+            <div class="filters-container">
+                <div class="filter-tabs">
+                    <button class="filter-tab active" data-filter="all">Все новости</button>
+                    <button class="filter-tab" data-filter="news">Новости</button>
+                    <button class="filter-tab" data-filter="promotions">Акции</button>
+                    <button class="filter-tab" data-filter="events">События</button>
+                </div>
+                <div class="search-box">
+                    <input type="text" id="newsSearch" placeholder="Поиск по новостям...">
+                    <button class="search-btn">
+                        <i class="icon-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="news-list section">
+        <div class="container">
+            <div class="news-grid" id="newsGrid">
+                <article class="news-item" data-category="promotions">
+                    <div class="news-image">
+                        <img src="https://avatars.mds.yandex.net/i?id=504b4b5e52a2555bfdc8406f510fe3b4_l-5234668-images-thumbs&n=13" alt="Летние скидки">
+                        <div class="news-badge">Акция</div>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-date">15.03.2025</span>
+                            <span class="news-category">Акции</span>
+                        </div>
+                        <h2 class="news-title">Летние скидки до 30% на туры в Турцию</h2>
+                        <p class="news-excerpt">Специальное предложение на летний сезон! Скидки до 30% на туры в Анталию, Кемер и Сиде. Бронируйте до 31 марта и экономьте на отпуске.</p>
+                        <a href="news-detail.html?id=1" class="read-more">Читать далее</a>
+                    </div>
+                </article>
+
+                <article class="news-item" data-category="news">
+                    <div class="news-image">
+                        <img src="https://i.4pcdn.org/trv/1546943942913.jpg" alt="Новые направления">
+                        <div class="news-badge">Новое</div>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-date">12.03.2025</span>
+                            <span class="news-category">Новости</span>
+                        </div>
+                        <h2 class="news-title">Новые направления: Мальдивы и Сейшелы</h2>
+                        <p class="news-excerpt">Мы рады сообщить о добавлении новых экзотических направлений в нашу программу. Теперь вы можете отправиться на Мальдивы или Сейшелы с нами!</p>
+                        <a href="news-detail.html?id=2" class="read-more">Читать далее</a>
+                    </div>
+                </article>
+
+                <article class="news-item" data-category="events">
+                    <div class="news-image">
+                        <img src="https://avatars.mds.yandex.net/i?id=bec46faf4e7d519ca6ac2d053ccefcb4_l-4521347-images-thumbs&n=13" alt="Туристическая выставка">
+                        <div class="news-badge">Событие</div>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-date">10.03.2025</span>
+                            <span class="news-category">События</span>
+                        </div>
+                        <h2 class="news-title">Участие в туристической выставке "Отдых 2025"</h2>
+                        <p class="news-excerpt">Приглашаем посетить наш стенд на крупнейшей туристической выставке года. Специальные предложения только для посетителей выставки!</p>
+                        <a href="news-detail.html?id=3" class="read-more">Читать далее</a>
+                    </div>
+                </article>
+
+                <article class="news-item" data-category="news">
+                    <div class="news-image">
+                        <img src="https://static1-repo.aif.by/1/3c/26744/e252b098213bae617f807d8aafe7b4f0.jpg" alt="Визовые изменения">
+                        <div class="news-badge">Важно</div>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-date">08.03.2025</span>
+                            <span class="news-category">Новости</span>
+                        </div>
+                        <h2 class="news-title">Изменения в визовом режиме для ЕС</h2>
+                        <p class="news-excerpt">С 1 апреля вступают в силу новые правила получения шенгенских виз. Мы поможем вам разобраться во всех изменениях.</p>
+                        <a href="news-detail.html?id=4" class="read-more">Читать далее</a>
+                    </div>
+                </article>
+
+                <article class="news-item" data-category="promotions">
+                    <div class="news-image">
+                        <img src="https://253702.selcdn.ru/web/magput/frontend/uploads/editor/ranbron24.jpg" alt="Раннее бронирование">
+                        <div class="news-badge">Акция</div>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-date">05.03.2025</span>
+                            <span class="news-category">Акции</span>
+                        </div>
+                        <h2 class="news-title">Раннее бронирование: скидки до 25%</h2>
+                        <p class="news-excerpt">Забронируйте тур на лето 2025 года до 30 апреля и получите скидку до 25%. Чем раньше бронируете, тем больше экономите!</p>
+                        <a href="news-detail.html?id=5" class="read-more">Читать далее</a>
+                    </div>
+                </article>
+
+                <article class="news-item" data-category="events">
+                    <div class="news-image">
+                        <img src="https://kurortnic.ru/wp-content/uploads/allinclus-kurortnic.jpg" alt="Семинар по туризму">
+                        <div class="news-badge">Событие</div>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-date">03.03.2025</span>
+                            <span class="news-category">События</span>
+                        </div>
+                        <h2 class="news-title">Бесплатный семинар "Как выбрать идеальный тур"</h2>
+                        <p class="news-excerpt">Приглашаем на бесплатный семинар, где наши эксперты расскажут, как выбрать идеальный тур для вашего отпуска.</p>
+                        <a href="news-detail.html?id=6" class="read-more">Читать далее</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="pagination">
+                <button class="page-btn prev" disabled>
+                    <i class="icon-arrow-left"></i>
+                    Предыдущая
+                </button>
+                <div class="page-numbers">
+                    <button class="page-number active">1</button>
+                    <button class="page-number">2</button>
+                    <button class="page-number">3</button>
+                </div>
+                <button class="page-btn next">
+                    Следующая
+                    <i class="icon-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter section">
+        <div class="container">
+            <div class="newsletter-card">
+                <h2>Подпишитесь на наши новости</h2>
+                <p>Получайте первыми информацию о новых турах, акциях и специальных предложениях</p>
+                <form class="newsletter-form">
+                    <div class="form-group">
+                        <input type="email" placeholder="Введите ваш email" required>
+                        <button type="submit" class="btn btn-primary">Подписаться</button>
+                    </div>
+                    <label class="checkbox-label">
+                        <input type="checkbox" required>
+                        <span class="checkmark"></span>
+                        Согласен с <a href="privacy.html" target="_blank">политикой конфиденциальности</a>
+                    </label>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer"></div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/news.js"></script>
+</body>
+</html>

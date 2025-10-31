@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет - GeoTravel</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/tours.css">
+    <style>
+      .btn-equal { min-width: 180px; min-height: 40px; display:inline-flex; align-items:center; justify-content:center; }
+      .btn-gap { margin-left: 28px; }
+      .profile-tooltip { position:absolute; top:100%; left:0; margin-top:8px; background:#fff; color:#2c3e50; border-radius:10px; box-shadow:0 10px 20px rgba(0,0,0,.12); padding:12px 14px; width: 320px; opacity:0; transform: translateY(-4px); pointer-events:none; transition: opacity .18s ease, transform .18s ease; z-index:5; }
+      .profile-tooltip.show { opacity:1; transform: translateY(0); pointer-events:auto; }
+      .profile-btn-wrap { position:relative; display:inline-block; }
+    </style>
+</head>
+<body>
+    <div id="header"></div>
+    <section class="section">
+        <div class="container">
+            <h1 class="section-title">Личный кабинет</h1>
+            <div class="account-header" style="display:grid;grid-template-columns:1fr auto auto;align-items:center;gap:16px;margin-bottom:20px">
+                <div>
+                  <h2 style="margin:0 0 8px 0;color:#2c3e50;font-size:28px">Добро пожаловать, <span id="accUser"></span>!</h2>
+                </div>
+                <span class="profile-btn-wrap" style="justify-self:center">
+                  <button id="openProfileBtn" class="btn btn-outline btn-equal btn-compact">
+                    <span style="display:inline-flex;align-items:center;gap:8px">👤 Добавить свои данные</span>
+                  </button>
+                  <div id="profileTooltip" class="profile-tooltip" style="margin-top:10px">Добавьте свои данные, чтобы бронировать быстрее и получать лучшие предложения.</div>
+                </span>
+                <a href="../pages/services.html" class="btn btn-primary btn-equal btn-compact" style="justify-self:end">Каталог услуг</a>
+            </div>
+
+            
+
+            <div class="favorites-section" style="background:#f8f9fa;padding:20px;border-radius:12px">
+                <h2 class="section-title" style="margin:0 0 12px 0">Избранные туры</h2>
+                <div id="favoritesList" class="tours-grid"></div>
+            </div>
+            <div style="margin-top:20px;display:flex;gap:12px;flex-wrap:wrap">
+                <a href="../pages/tours.html" class="btn btn-outline btn-equal btn-compact">Выбрать тур</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Профиль (модальное окно) -->
+    <div id="profileModal" class="modal" style="display:none;position:fixed;inset:0;z-index:2000;background:rgba(0,0,0,.4);">
+      <div class="modal-content" style="background:#fff;max-width:560px;margin:60px auto;padding:24px 24px 28px;border-radius:16px;position:relative;box-shadow:0 20px 40px rgba(0,0,0,.2)">
+        <button id="closeProfileBtn" aria-label="Закрыть" style="position:absolute;right:14px;top:14px;width:36px;height:36px;border:none;border-radius:50%;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;font-size:20px;line-height:36px;text-align:center;cursor:pointer;box-shadow:0 6px 14px rgba(0,0,0,.15);transition:transform .15s ease, opacity .15s ease">×</button>
+        <h2 style="margin-top:0;color:#2c3e50">Профиль для авто‑заполнения</h2>
+        <form id="profileForm" data-skip-global="true">
+          <div class="form-row" style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+            <div class="form-group"><label>Фамилия</label><input id="pLastName" class="form-input"></div>
+            <div class="form-group"><label>Имя</label><input id="pFirstName" class="form-input"></div>
+            <div class="form-group"><label>Отчество</label><input id="pMiddleName" class="form-input"></div>
+            <div class="form-group"><label>Дата рождения</label><input id="pBirthDate" type="date" class="form-input"></div>
+            <div class="form-group"><label>Серия и номер паспорта</label><input id="pPassport" class="form-input" placeholder="1234 567890"></div>
+            <div class="form-group"><label>Телефон</label><input id="pPhone" class="form-input" placeholder="+7 900 000-00-00"></div>
+            <div class="form-group" style="grid-column: span 2"><label>Email</label><input id="pEmail" type="email" class="form-input" placeholder="you@example.com"></div>
+          </div>
+          <div style="margin-top:16px;display:flex;gap:10px">
+            <button type="submit" class="btn btn-primary">Сохранить</button>
+            <button type="button" id="clearProfileBtn" class="btn btn-outline">Очистить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="footer"></div>
+    <script src="../js/main.js"></script>
+    <script src="../js/auth.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function(){
+        var u = localStorage.getItem('gt_current_user');
+        var el = document.getElementById('accUser'); if (el) el.textContent = u || 'Гость';
+      });
+    </script>
+</body>
+</html>
+
+

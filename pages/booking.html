@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бронирование - Туристическое агентство "GeoTravel"</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/booking.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Бронирование тура</h1>
+            <p>Заполните форму для бронирования выбранного тура</p>
+        </div>
+    </section>
+
+    <section class="booking-section section">
+        <div class="container">
+            <div class="booking-content">
+                <div class="booking-form-container">
+                    <h2>Данные для бронирования</h2>
+                    <form class="booking-form" id="bookingForm">
+                        <div class="form-section">
+                            <h3>Контактная информация</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="lastName">Фамилия *</label>
+                                    <input type="text" id="lastName" name="lastName" class="form-input" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="firstName">Имя *</label>
+                                    <input type="text" id="firstName" name="firstName" class="form-input" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="middleName">Отчество</label>
+                                    <input type="text" id="middleName" name="middleName" class="form-input">
+                                </div>
+                                <div class="form-group">
+                                    <label for="birthDate">Дата рождения *</label>
+                                    <input type="date" id="birthDate" name="birthDate" class="form-input" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="phone">Телефон *</label>
+                                    <input type="tel" id="phone" name="phone" class="form-input" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email *</label>
+                                    <input type="email" id="email" name="email" class="form-input" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h3>Участники поездки</h3>
+                            <div class="participants-container" id="participantsContainer">
+                                <div class="participant-item">
+                                    <h4>Участник 1 (основной заявитель)</h4>
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label>Фамилия *</label>
+                                            <input type="text" name="participant[0][lastName]" class="form-input" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Имя *</label>
+                                            <input type="text" name="participant[0][firstName]" class="form-input" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label>Отчество</label>
+                                            <input type="text" name="participant[0][middleName]" class="form-input">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Дата рождения *</label>
+                                            <input type="date" name="participant[0][birthDate]" class="form-input" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label>Пол *</label>
+                                            <select name="participant[0][gender]" class="form-select" required>
+                                                <option value="">Выберите</option>
+                                                <option value="male">Мужской</option>
+                                                <option value="female">Женский</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Серия и номер паспорта *</label>
+                                            <input type="text" name="participant[0][passport]" class="form-input" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-outline" onclick="addParticipant()">Добавить участника</button>
+                        </div>
+
+                        <div class="form-section">
+                            <h3>Дополнительные услуги</h3>
+                            <div class="services-list">
+                                <label class="service-item">
+                                    <input type="checkbox" name="services[]" value="insurance">
+                                    <span class="service-name">Медицинская страховка</span>
+                                    <span class="service-price">+ 1 500 ₽</span>
+                                </label>
+                                <label class="service-item">
+                                    <input type="checkbox" name="services[]" value="transfer">
+                                    <span class="service-name">Трансфер аэропорт-отель</span>
+                                    <span class="service-price">+ 2 000 ₽</span>
+                                </label>
+                                <label class="service-item">
+                                    <input type="checkbox" name="services[]" value="excursion">
+                                    <span class="service-name">Обзорная экскурсия</span>
+                                    <span class="service-price">+ 3 000 ₽</span>
+                                </label>
+                                <label class="service-item">
+                                    <input type="checkbox" name="services[]" value="visa">
+                                    <span class="service-name">Визовая поддержка</span>
+                                    <span class="service-price">+ 5 000 ₽</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h3>Комментарии</h3>
+                            <div class="form-group">
+                                <label for="comments">Дополнительные пожелания</label>
+                                <textarea id="comments" name="comments" class="form-textarea" rows="4"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h3>Согласие</h3>
+                            <div class="agreement-checkboxes">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="agreement" required>
+                                    <span class="checkmark"></span>
+                                    Согласен с <a href="terms.html" target="_blank">условиями бронирования</a> *
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="privacy" required>
+                                    <span class="checkmark"></span>
+                                    Согласен с <a href="privacy.html" target="_blank">политикой конфиденциальности</a> *
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="newsletter">
+                                    <span class="checkmark"></span>
+                                    Подписаться на рассылку новостей и спецпредложений
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">Забронировать тур</button>
+                            <button type="button" class="btn btn-outline" onclick="history.back()">Назад</button>
+                            <button type="button" class="btn btn-danger" onclick="cancelBooking()">Отменить бронирование</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="booking-summary">
+                    <div class="summary-card">
+                        <h3>Сводка бронирования</h3>
+                        <div class="tour-info">
+                            <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=300&h=200&fit=crop" alt="Тур" class="tour-image">
+                            <div class="tour-details">
+                                <h4>Анталия, Турция - 7 ночей</h4>
+                                <p>Отель Delphin Imperial 5★</p>
+                                <p>Все включено</p>
+                            </div>
+                        </div>
+                        <div class="price-breakdown">
+                            <div class="price-item">
+                                <span>Тур (2 взрослых)</span>
+                                <span>70 000 ₽</span>
+                            </div>
+                            <div class="price-item">
+                                <span>Дополнительные услуги</span>
+                                <span id="additionalServices">0 ₽</span>
+                            </div>
+                            <div class="price-item total">
+                                <span>Итого</span>
+                                <span id="totalPrice">70 000 ₽</span>
+                            </div>
+                        </div>
+                        <div class="booking-note">
+                            <p><strong>Важно:</strong> После подтверждения бронирования с вами свяжется менеджер для уточнения деталей и оформления документов.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer"></div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/booking.js"></script>
+</body>
+</html>

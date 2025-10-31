@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Часто задаваемые вопросы - Туристическое агентство "GeoTravel"</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/faq.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Часто задаваемые вопросы</h1>
+            <p>Ответы на самые популярные вопросы наших клиентов</p>
+        </div>
+    </section>
+
+    <section class="faq-search section">
+        <div class="container">
+            <div class="search-container">
+                <input type="text" id="faqSearch" class="search-input" placeholder="Поиск по вопросам...">
+                <button class="search-btn">
+                    <i class="icon-search"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-categories section">
+        <div class="container">
+            <div class="categories-nav">
+                <button class="category-btn active" data-category="all">Все вопросы</button>
+                <button class="category-btn" data-category="booking">Бронирование</button>
+                <button class="category-btn" data-category="payment">Оплата</button>
+                <button class="category-btn" data-category="documents">Документы</button>
+                <button class="category-btn" data-category="travel">Путешествие</button>
+                <button class="category-btn" data-category="cancellation">Отмена</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-list section">
+        <div class="container">
+            <div class="faq-items">
+                <div class="faq-item" data-category="booking">
+                    <div class="faq-question">
+                        <h3>Как забронировать тур?</h3>
+                        <i class="icon-arrow"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Вы можете забронировать тур несколькими способами:</p>
+                        <ul>
+                            <li>Через наш сайт, выбрав понравившийся тур и заполнив форму бронирования</li>
+                            <li>По телефону +7 (800) 123-45-67</li>
+                            <li>Посетив наш офис по адресу: г. Москва, ул. Тверская, 15</li>
+                        </ul>
+                        <p>Наши менеджеры помогут подобрать идеальный тур для вас и ответят на все вопросы.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="booking">
+                    <div class="faq-question">
+                        <h3>Нужно ли вносить предоплату при бронировании?</h3>
+                        <i class="icon-arrow"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, при бронировании тура необходимо внести предоплату в размере 30% от стоимости тура. Остальная сумма оплачивается не позднее чем за 14 дней до вылета.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="payment">
+                    <div class="faq-question">
+                        <h3>Какие способы оплаты вы принимаете?</h3>
+                        <i class="icon-arrow"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Мы принимаем оплату следующими способами:</p>
+                        <ul>
+                            <li>Банковские карты (Visa, MasterCard, МИР)</li>
+                            <li>Банковский перевод</li>
+                            <li>Наличные в офисе</li>
+                            <li>Электронные кошельки (ЮMoney, QIWI)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="payment">
+                    <div class="faq-question">
+                        <h3>Можно ли оплатить тур в рассрочку?</h3>
+                        <i class="icon-arrow"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, мы предоставляем возможность оплаты тура в рассрочку. Условия рассрочки обсуждаются индивидуально с каждым клиентом. Минимальный срок рассрочки - 2 месяца, максимальный - 12 месяцев.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="documents">
+                    <div class="faq-question">
+                        <h3>Какие документы нужны для поездки за границу?</h3>
+                        <i class="icon-arrow"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Для поездки за границу вам понадобятся:</p>
+                        <ul>
+                            <li>Загранпаспорт, действительный не менее 6 месяцев с даты возвращения</li>
+                            <li>Виза (если требуется для выбранной страны)</li>
+                            <li>Медицинская страховка</li>
+                            <li>Билеты на самолет</li>
+                            <li>Ваучер на отель</li>
+                        </ul>
+                        <p>Мы поможем оформить все необходимые документы.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="documents">
+                    <div class="faq-question">
+                        <h3>Помогаете ли вы с оформлением виз?</h3>
+                        <i class="icon-arrow"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, мы предоставляем полную визовую поддержку:</p>
+                        <ul>
+                            <li>Консультация по необходимым документам</li>
+                            <li>Заполнение анкет</li>
+                            <li>Запись на подачу документов</li>
+                            <li>Отслеживание статуса визы</li>
+                            <li>Получение готовой визы</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="travel">
+                    <div class="faq-question">
+                        <h3>Что делать, если рейс задержали или отменили?</h3>
+                        <i class="icon-arrow"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>В случае задержки или отмены рейса:</p>
+                        <ul>
+                            <li>Немедленно свяжитесь с нами по телефону +7 (800) 123-45-67</li>
+                            <li>Мы поможем перебронировать рейс</li>
+                            <li>Организуем трансфер и размещение при необходимости</li>
+                            <li>Компенсируем дополнительные расходы в соответствии с условиями страхования</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="travel">
+                    <div class="faq-question">
+                        <h3>Предоставляете ли вы страховку?</h3>
+                        <i class="icon-arrow"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, мы предлагаем различные виды страхования:</p>
+                        <ul>
+                            <li>Медицинское страхование (обязательно для поездок за границу)</li>
+                            <li>Страхование отмены поездки</li>
+                            <li>Страхование багажа</li>
+                            <li>Страхование от несчастного случая</li>
+                        </ul>
+                        <p>Стоимость страхования зависит от страны и срока поездки.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="cancellation">
+                    <div class="faq-question">
+                        <h3>Можно ли отменить бронирование?</h3>
+                        <i class="icon-arrow"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, вы можете отменить бронирование, но условия возврата зависят от времени до вылета:</p>
+                        <ul>
+                            <li>Более 30 дней - возврат 100% стоимости</li>
+                            <li>15-30 дней - возврат 70% стоимости</li>
+                            <li>7-14 дней - возврат 50% стоимости</li>
+                            <li>Менее 7 дней - возврат не предусмотрен</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="cancellation">
+                    <div class="faq-question">
+                        <h3>Что делать, если заболел перед поездкой?</h3>
+                        <i class="icon-arrow"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Если вы заболели перед поездкой:</p>
+                        <ul>
+                            <li>Немедленно свяжитесь с нами</li>
+                            <li>Предоставьте справку от врача</li>
+                            <li>Мы поможем перенести поездку на другую дату</li>
+                            <li>При наличии страховки отмены поездки - компенсация расходов</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="all">
+                    <div class="faq-question">
+                        <h3>Есть ли скидки для постоянных клиентов?</h3>
+                        <i class="icon-arrow"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, у нас действует программа лояльности:</p>
+                        <ul>
+                            <li>Скидка 5% при втором бронировании</li>
+                            <li>Скидка 10% при третьем и последующих бронированиях</li>
+                            <li>Дополнительные скидки в день рождения</li>
+                            <li>Специальные предложения для корпоративных клиентов</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="all">
+                    <div class="faq-question">
+                        <h3>Работаете ли вы в выходные дни?</h3>
+                        <i class="icon-arrow"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, мы работаем 7 дней в неделю:</p>
+                        <ul>
+                            <li>Понедельник - Пятница: 9:00 - 21:00</li>
+                            <li>Суббота - Воскресенье: 10:00 - 20:00</li>
+                            <li>Телефон поддержки работает круглосуточно</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-support section">
+        <div class="container">
+            <div class="support-card">
+                <h2>Не нашли ответ на свой вопрос?</h2>
+                <p>Свяжитесь с нами, и мы обязательно поможем!</p>
+                <div class="support-contacts">
+                    <a href="tel:+78001234567" class="contact-btn phone">
+                        <i class="icon-phone"></i>
+                        <span>+7 (8914) *** ** **</span>
+                    </a>
+                    <a href="mailto:info@puteshestvie.ru" class="contact-btn email">
+                        <i class="icon-email"></i>
+                        <span>info@puteshestvie.ru</span>
+                    </a>
+                    <a href="contacts.html" class="contact-btn office">
+                        <i class="icon-location"></i>
+                        <span>Наш офис</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer"></div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/faq.js"></script>
+</body>
+</html>

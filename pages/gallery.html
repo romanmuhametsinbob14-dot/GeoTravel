@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея - Туристическое агентство "GeoTravel"</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/gallery.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Галерея</h1>
+            <p>Фотографии из наших путешествий и отелей</p>
+        </div>
+    </section>
+
+    <section class="gallery-filters section">
+        <div class="container">
+            <div class="filters-container">
+                <div class="filter-tabs">
+                    <button class="filter-tab active" data-filter="all">Все фото</button>
+                    <button class="filter-tab" data-filter="hotels">Отели</button>
+                    <button class="filter-tab" data-filter="beaches">Пляжи</button>
+                    <button class="filter-tab" data-filter="cities">Города</button>
+                    <button class="filter-tab" data-filter="nature">Природа</button>
+                    <button class="filter-tab" data-filter="food">Еда</button>
+                </div>
+                <div class="view-options">
+                    <button class="view-btn page-btn active" data-page="1">1</button>
+                    <button class="view-btn page-btn" data-page="2">2</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery section">
+        <div class="container">
+            <div class="gallery-grid" id="galleryGrid">
+                <div class="gallery-item" data-category="hotels">
+                    <div class="gallery-image">
+                        <img src="https://avatars.mds.yandex.net/i?id=936e6605e9ae98087166e91d420c365f6789bddd-11924570-images-thumbs&n=13" alt="Отель Delphin Imperial">
+                        <div class="gallery-overlay">
+                            <button class="gallery-btn" onclick="openLightbox(0)">
+                                <i class="icon-zoom"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Отель Delphin Imperial</h3>
+                        <p>Анталия, Турция</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="beaches">
+                    <div class="gallery-image">
+                        <img src="https://cdn.profile.ru/wp-content/uploads/2022/10/Turciya-more-plyazh-pesok-otdyh.jpg" alt="Пляж в Анталии">
+                        <div class="gallery-overlay">
+                            <button class="gallery-btn" onclick="openLightbox(1)">
+                                <i class="icon-zoom"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Пляж в Анталии</h3>
+                        <p>Турция</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="cities">
+                    <div class="gallery-image">
+                        <img src="https://i.pinimg.com/originals/e1/54/79/e15479f824ac40bf1456cf46b1ec369c.jpg" alt="Стамбул">
+                        <div class="gallery-overlay">
+                            <button class="gallery-btn" onclick="openLightbox(2)">
+                                <i class="icon-zoom"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Стамбул</h3>
+                        <p>Турция</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="nature">
+                    <div class="gallery-image">
+                        <img src="https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_65ef213c378cfd7aafcde429_65ef2196791b4931f095dda2/scale_1200" alt="Каппадокия">
+                        <div class="gallery-overlay">
+                            <button class="gallery-btn" onclick="openLightbox(3)">
+                                <i class="icon-zoom"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Каппадокия</h3>
+                        <p>Турция</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="hotels">
+                    <div class="gallery-image">
+                        <img src="https://i.pinimg.com/originals/04/86/a0/0486a0bb88608cd6224037589861e764.jpg" alt="Отель в Хургаде">
+                        <div class="gallery-overlay">
+                            <button class="gallery-btn" onclick="openLightbox(4)">
+                                <i class="icon-zoom"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Отель в Хургаде</h3>
+                        <p>Египет</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="beaches">
+                    <div class="gallery-image">
+                        <img src="https://i.pinimg.com/originals/cf/27/4d/cf274d68517d376e15b0ec0fbac75111.jpg" alt="Красное море">
+                        <div class="gallery-overlay">
+                            <button class="gallery-btn" onclick="openLightbox(5)">
+                                <i class="icon-zoom"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Красное море</h3>
+                        <p>Египет</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="cities">
+                    <div class="gallery-image">
+                        <img src="https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_675ad81534a3d93269b1b908_675ad92cb064df0ea0a8b055/scale_1200" alt="Каир">
+                        <div class="gallery-overlay">
+                            <button class="gallery-btn" onclick="openLightbox(6)">
+                                <i class="icon-zoom"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Каир</h3>
+                        <p>Египет</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="nature">
+                    <div class="gallery-image">
+                        <img src="https://aif-s3.aif.ru/images/040/956/5a0a8e967b67c86de6c3c9d0de0d815d.webp" alt="Пирамиды">
+                        <div class="gallery-overlay">
+                            <button class="gallery-btn" onclick="openLightbox(7)">
+                                <i class="icon-zoom"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Пирамиды Гизы</h3>
+                        <p>Египет</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="hotels">
+                    <div class="gallery-image">
+                        <img src="https://i.pinimg.com/736x/78/02/3b/78023b78e9c13bfa3f980e6517ce7537.jpg" alt="Отель в Тайланде">
+                        <div class="gallery-overlay">
+                            <button class="gallery-btn" onclick="openLightbox(8)">
+                                <i class="icon-zoom"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Отель в Тайланде</h3>
+                        <p>Пхукет</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="beaches">
+                    <div class="gallery-image">
+                        <img src="https://avatars.mds.yandex.net/i?id=c3d25c9909ba356e9005e21de9540297_l-6372745-images-thumbs&n=13" alt="Пляж в Тайланде">
+                        <div class="gallery-overlay">
+                            <button class="gallery-btn" onclick="openLightbox(9)">
+                                <i class="icon-zoom"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Пляж в Тайланде</h3>
+                        <p>Пхукет</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="food">
+                    <div class="gallery-image">
+                        <img src="https://avatars.mds.yandex.net/i?id=a885b52ed0df1676af9cb358c254767d_l-10651277-images-thumbs&n=13" alt="Тайская кухня">
+                        <div class="gallery-overlay">
+                            <button class="gallery-btn" onclick="openLightbox(10)">
+                                <i class="icon-zoom"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Тайская кухня</h3>
+                        <p>Тайланд</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="nature">
+                    <div class="gallery-image">
+                        <img src="https://img.pikbest.com/origin/10/14/30/48HpIkbEsT7bv.jpg!bw700" alt="Джунгли">
+                        <div class="gallery-overlay">
+                            <button class="gallery-btn" onclick="openLightbox(11)">
+                                <i class="icon-zoom"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Джунгли Тайланда</h3>
+                        <p>Тайланд</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="load-more-container">
+                <button class="btn btn-outline" id="loadMoreBtn">Загрузить еще</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-overlay" onclick="closeLightbox()"></div>
+        <div class="lightbox-content">
+            <button class="lightbox-close" onclick="closeLightbox()">
+                <i class="icon-close"></i>
+            </button>
+            <button class="lightbox-prev" onclick="prevImage()">
+                <i class="icon-arrow-left"></i>
+            </button>
+            <button class="lightbox-next" onclick="nextImage()">
+                <i class="icon-arrow-right"></i>
+            </button>
+            <div class="lightbox-image-container">
+                <img id="lightboxImage" src="" alt="">
+            </div>
+            <div class="lightbox-info">
+                <h3 id="lightboxTitle"></h3>
+                <p id="lightboxDescription"></p>
+                <div class="lightbox-counter">
+                    <span id="lightboxCounter"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/gallery.js"></script>
+</body>
+</html>

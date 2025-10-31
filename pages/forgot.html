@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Восстановление пароля - GeoTravel</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+</head>
+<body>
+    <div id="header"></div>
+    <section class="section">
+        <div class="container">
+            <h1>Восстановление пароля</h1>
+            <form id="forgotForm" class="booking-form" style="max-width:480px">
+                <div class="form-group">
+                    <label for="forgotLogin">Логин</label>
+                    <input id="forgotLogin" class="form-input" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Сбросить пароль</button>
+            </form>
+            <p id="forgotInfo" style="margin-top:12px;color:#2c3e50;display:none;">Если пользователь существует, ссылка для сброса пароля отправлена на ваш email.</p>
+        </div>
+    </section>
+    <div id="footer"></div>
+    <script src="../js/main.js"></script>
+    <script>
+      document.getElementById('forgotForm').addEventListener('submit', function(e){
+        e.preventDefault();
+        document.getElementById('forgotInfo').style.display = 'block';
+      });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+

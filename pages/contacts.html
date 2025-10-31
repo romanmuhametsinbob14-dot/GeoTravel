@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Туристическое агентство "GeoTravel"</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/contacts.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Контакты</h1>
+            <p>Свяжитесь с нами для получения консультации</p>
+        </div>
+    </section>
+
+    <section class="contact-info section">
+        <div class="container">
+            <div class="contact-grid grid grid-2">
+                <div class="contact-details">
+                    <h2>Наши контакты</h2>
+                    <div class="contact-item">
+                        <div class="contact-icon" aria-hidden="true">📞</div>
+                        <div class="contact-content">
+                            <h3>Телефон</h3>
+                            <p>+7 (914) *** ** **</p>
+                            <span>Звонок бесплатный</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon" aria-hidden="true">✉️</div>
+                        <div class="contact-content">
+                            <h3>Email</h3>
+                            <p>info@puteshestvie.ru</p>
+                            <p>booking@puteshestvie.ru</p>
+                            <span>Ответим в течение часа</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon" aria-hidden="true">📍</div>
+                        <div class="contact-content">
+                            <h3>Адрес</h3>
+                            <p>г.Мирный, ул. Ленина, 1</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon" aria-hidden="true">⏰</div>
+                        <div class="contact-content">
+                            <h3>Время работы</h3>
+                            <p>Пн-Пт: 9:00-21:00</p>
+                            <p>Сб-Вс: 10:00-20:00</p>
+                            <span>Без выходных</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="contact-form-section">
+                    <h2>Напишите нам</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Имя *</label>
+                                <input type="text" id="name" name="name" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Телефон *</label>
+                                <input type="tel" id="phone" name="phone" class="form-input" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Тема обращения</label>
+                            <select id="subject" name="subject" class="form-select">
+                                <option value="">Выберите тему</option>
+                                <option value="booking">Бронирование тура</option>
+                                <option value="visa">Визовая поддержка</option>
+                                <option value="insurance">Страхование</option>
+                                <option value="excursion">Экскурсии</option>
+                                <option value="other">Другое</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Сообщение *</label>
+                            <textarea id="message" name="message" class="form-textarea" rows="5" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="agreement" name="agreement" required>
+                                <span class="checkmark"></span>
+                                Согласен с <a href="privacy.html" target="_blank">политикой конфиденциальности</a>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn">Отправить сообщение</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq section">
+        <div class="container">
+            <h2 class="section-title">Часто задаваемые вопросы</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Как забронировать тур?</h3>
+                        <i class="icon-arrow"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Вы можете забронировать тур несколькими способами: через наш сайт, по телефону +7 (914) *** ** **, или посетив наш офис. Наши менеджеры помогут подобрать идеальный тур для вас.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Какие документы нужны для поездки?</h3>
+                        <i class="icon-arrow"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Для поездки за границу вам понадобится загранпаспорт, действительный не менее 6 месяцев с даты возвращения. Для некоторых стран может потребоваться виза. Мы поможем оформить все необходимые документы.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Можно ли отменить или изменить бронирование?</h3>
+                        <i class="icon-arrow"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, вы можете отменить или изменить бронирование в соответствии с условиями туроператора. Сроки и условия возврата зависят от конкретного тура и времени до вылета.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Предоставляете ли вы страховку?</h3>
+                        <i class="icon-arrow"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, мы предлагаем различные виды страхования: медицинское, отмены поездки, багажа. Страхование можно оформить при бронировании тура или отдельно.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Есть ли скидки для постоянных клиентов?</h3>
+                        <i class="icon-arrow"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, у нас действует программа лояльности для постоянных клиентов. Скидки зависят от количества совершенных поездок и могут достигать 10% от стоимости тура.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer"></div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/contacts.js"></script>
+</body>
+</html>

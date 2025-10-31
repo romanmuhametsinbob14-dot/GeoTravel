@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Туры - Туристическое агентство "GeoTravel"</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/tours.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Наши туры</h1>
+            <p>Выберите идеальный тур для вашего отдыха</p>
+        </div>
+    </section>
+
+    <section class="search-section">
+        <div class="container">
+            <div class="search-form">
+                <h2>Найдите свой идеальный тур</h2>
+                <form class="tour-search-form" data-skip-global="true">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="destination">Куда</label>
+                            <select id="destination" class="form-select">
+                                <option value="">Выберите направление</option>
+                                <option value="turkey">Турция</option>
+                                <option value="egypt">Египет</option>
+                                <option value="thailand">Тайланд</option>
+                                <option value="europe">Европа</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="departure">Откуда</label>
+                            <select id="departure" class="form-select">
+                                <option value="">Выберите город</option>
+                                <option value="moscow">Москва</option>
+                                <option value="spb">Санкт-Петербург</option>
+                                <option value="ekaterinburg">Екатеринбург</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Дата вылета</label>
+                            <input type="date" id="date" class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="nights">Ночей</label>
+                            <select id="nights" class="form-select">
+                                <option value="">Любое</option>
+                                <option value="3-5">3-5 ночей</option>
+                                <option value="6-8">6-8 ночей</option>
+                                <option value="9-14">9-14 ночей</option>
+                                <option value="15+">15+ ночей</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn">Найти туры</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="tours-list section">
+        <div class="container">
+            <div class="tours-grid" id="tours-grid">
+                <div class="tour-card card" data-type="beach" data-id="1">
+                    <img src="https://avatars.mds.yandex.net/i?id=706c15ff4fe613186f39db881365388b_l-7758910-images-thumbs&n=13" alt="Анталия" class="card-img">
+                    <div class="card-content">
+                        <div class="tour-badge">Пляжный отдых</div>
+                        <h3 class="card-title">Анталия, Турция</h3>
+                        <p class="card-text">7 ночей, все включено, 5★ отель Delphin Imperial</p>
+                        <div class="tour-details">
+                            <div class="detail-item">
+                                <i class="icon-calendar"></i>
+                                <span>7 ночей</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="icon-plane"></i>
+                                <span>Прямой рейс</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="icon-star"></i>
+                                <span>5 звезд</span>
+                            </div>
+                        </div>
+                        <div class="card-price">от 35 000 ₽</div>
+                        <div class="card-actions">
+                            <a href="tour-details.html?id=1" class="btn">Подробнее</a>
+                            <a href="#" class="btn book-btn">Забронировать</a>
+                            <a href="#" class="favorite-btn favorite-europe"><i class="icon-heart-empty"></i> В избранное</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tour-card card" data-type="beach" data-id="2">
+                    <img src="https://avatars.mds.yandex.net/i?id=aba51126b020fb3731fecf9fbe56b3fd_l-8168927-images-thumbs&n=13" alt="Хургада" class="card-img">
+                    <div class="card-content">
+                        <div class="tour-badge">Пляжный отдых</div>
+                        <h3 class="card-title">Хургада, Египет</h3>
+                        <p class="card-text">10 ночей, все включено, 4★ отель Steigenberger</p>
+                        <div class="tour-details">
+                            <div class="detail-item">
+                                <i class="icon-calendar"></i>
+                                <span>10 ночей</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="icon-plane"></i>
+                                <span>Прямой рейс</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="icon-star"></i>
+                                <span>4 звезды</span>
+                            </div>
+                        </div>
+                        <div class="card-price">от 42 000 ₽</div>
+                        <div class="card-actions">
+                            <a href="tour-details.html?id=2" class="btn">Подробнее</a>
+                            <a href="#" class="btn book-btn">Забронировать</a>
+                            <a href="#" class="favorite-btn"><i class="icon-heart-empty"></i> В избранное</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tour-card card" data-type="excursion" data-id="3">
+                    <img src="https://sun9-40.userapi.com/c604525/v604525628/5a3fa/DFi66xcuVuc.jpg" alt="Европа" class="card-img">
+                    <div class="card-content">
+                        <div class="tour-badge">Экскурсионный</div>
+                        <h3 class="card-title">Европа: 5 столиц</h3>
+                        <p class="card-text">10 дней, 5 стран, завтраки, экскурсии</p>
+                        <div class="tour-details">
+                            <div class="detail-item">
+                                <i class="icon-calendar"></i>
+                                <span>10 дней</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="icon-bus"></i>
+                                <span>Автобус</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="icon-guide"></i>
+                                <span>Гид</span>
+                            </div>
+                        </div>
+                        <div class="card-price">от 55 000 ₽</div>
+                        <div class="card-actions">
+                            <a href="tour-details.html?id=3" class="btn">Подробнее</a>
+                            <a href="#" class="btn book-btn">Забронировать</a>
+                            <a href="#" class="favorite-btn"><i class="icon-heart-empty"></i> В избранное</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tour-card card" data-type="excursion" data-id="4">
+                    <img src="https://inbusiness.kz/uploads/2025-6/v02IfVym.jpg" alt="Стамбул" class="card-img">
+                    <div class="card-content">
+                        <div class="tour-badge">Экскурсионный</div>
+                        <h3 class="card-title">Стамбул - город контрастов</h3>
+                        <p class="card-text">5 дней, завтраки, все экскурсии включены</p>
+                        <div class="tour-details">
+                            <div class="detail-item">
+                                <i class="icon-calendar"></i>
+                                <span>5 дней</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="icon-plane"></i>
+                                <span>Прямой рейс</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="icon-guide"></i>
+                                <span>Гид</span>
+                            </div>
+                        </div>
+                        <div class="card-price">от 28 000 ₽</div>
+                        <div class="card-actions">
+                            <a href="tour-details.html?id=4" class="btn">Подробнее</a>
+                            <a href="#" class="btn book-btn">Забронировать</a>
+                            <a href="#" class="favorite-btn"><i class="icon-heart-empty"></i> В избранное</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tour-card card" data-type="adventure" data-id="5">
+                    <img src="https://sun9-85.userapi.com/impf/xGC0HdQyAGxHYmSn37kEBzItLPYfUbN3-uEueA/0I2a3RP_CQM.jpg?size=1920x768&quality=95&crop=0,60,1220,487&sign=e8c48d3696f4621ad6049632cf00851c&type=cover_group" alt="Тайланд" class="card-img">
+                    <div class="card-content">
+                        <div class="tour-badge">Приключенческий</div>
+                        <h3 class="card-title">Тайланд: острова и джунгли</h3>
+                        <p class="card-text">12 дней, активный отдых, дайвинг</p>
+                        <div class="tour-details">
+                            <div class="detail-item">
+                                <i class="icon-calendar"></i>
+                                <span>12 дней</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="icon-plane"></i>
+                                <span>С пересадкой</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="icon-adventure"></i>
+                                <span>Активный</span>
+                            </div>
+                        </div>
+                        <div class="card-price">от 65 000 ₽</div>
+                        <div class="card-actions">
+                            <a href="tour-details.html?id=5" class="btn">Подробнее</a>
+                            <a href="#" class="btn book-btn">Забронировать</a>
+                            <a href="#" class="favorite-btn"><i class="icon-heart-empty"></i> В избранное</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tour-card card" data-type="adventure" data-id="6">
+                    <img src="https://cdn.fishki.net/upload/post/201401/27/1240358/394645.jpg" alt="ОАЭ" class="card-img">
+                    <div class="card-content">
+                        <div class="tour-badge">Приключенческий</div>
+                        <h3 class="card-title">ОАЭ: пустыня и небоскребы</h3>
+                        <p class="card-text">8 дней, сафари, шопинг, развлечения</p>
+                        <div class="tour-details">
+                            <div class="detail-item">
+                                <i class="icon-calendar"></i>
+                                <span>8 дней</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="icon-plane"></i>
+                                <span>Прямой рейс</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="icon-adventure"></i>
+                                <span>Активный</span>
+                            </div>
+                        </div>
+                        <div class="card-price">от 48 000 ₽</div>
+                        <div class="card-actions">
+                            <a href="tour-details.html?id=6" class="btn">Подробнее</a>
+                            <a href="#" class="btn book-btn">Забронировать</a>
+                            <a href="#" class="favorite-btn"><i class="icon-heart-empty"></i> В избранное</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tour-card card" data-type="wellness" data-id="7">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d8/Karlovy_Vary_Czech.jpg" alt="Чехия" class="card-img">
+                    <div class="card-content">
+                        <div class="tour-badge">Лечебно-оздоровительный</div>
+                        <h3 class="card-title">Карловы Вары, Чехия</h3>
+                        <p class="card-text">10 дней, лечение, процедуры, экскурсии</p>
+                        <div class="tour-details">
+                            <div class="detail-item">
+                                <i class="icon-calendar"></i>
+                                <span>10 дней</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="icon-plane"></i>
+                                <span>Прямой рейс</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="icon-wellness"></i>
+                                <span>Лечение</span>
+                            </div>
+                        </div>
+                        <div class="card-price">от 75 000 ₽</div>
+                        <div class="card-actions">
+                            <a href="tour-details.html?id=7" class="btn">Подробнее</a>
+                            <a href="#" class="btn book-btn">Забронировать</a>
+                            <a href="#" class="favorite-btn"><i class="icon-heart-empty"></i> В избранное</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tour-card card" data-type="wellness" data-id="8">
+                    <img src="https://avatars.mds.yandex.net/i?id=c51ac7a529be4887f5820b121edb11c9_l-4283547-images-thumbs&n=13" alt="Израиль" class="card-img">
+                    <div class="card-content">
+                        <div class="tour-badge">Лечебно-оздоровительный</div>
+                        <h3 class="card-title">Мертвое море, Израиль</h3>
+                        <p class="card-text">7 дней, лечение, спа-процедуры</p>
+                        <div class="tour-details">
+                            <div class="detail-item">
+                                <i class="icon-calendar"></i>
+                                <span>7 дней</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="icon-plane"></i>
+                                <span>Прямой рейс</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="icon-wellness"></i>
+                                <span>Лечение</span>
+                            </div>
+                        </div>
+                        <div class="card-price">от 58 000 ₽</div>
+                        <div class="card-actions">
+                            <a href="tour-details.html?id=8" class="btn">Подробнее</a>
+                            <a href="#" class="btn book-btn">Забронировать</a>
+                            <a href="#" class="favorite-btn"><i class="icon-heart-empty"></i> В избранное</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer"></div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/tours.js"></script>
+</body>
+</html>
